@@ -23,11 +23,9 @@ export default function Buttons () {
                 </Link>
             </button>
             :
-            <button className="" onClick={handleSubmit}>
-                <Link to={location.pathname === "/" && formData.name && formData.email && formData.number ? "/secondStep" : location.pathname === "/secondStep" ? "/thirdStep" : location.pathname === "/thirdStep" ? "/fourthStep" : location.pathname === "/fourthStep" ? "/lastStep" : ""} className="bg-marineBlue text-lightGray font-semibold px-3 py-2 rounded-md">
-                    Next Step
-                </Link>
-            </button>
+            <Link onClick={handleSubmit} to={location.pathname === "/" && formData.name && formData.email && formData.number ? "/secondStep" : location.pathname === "/secondStep" ? "/thirdStep" : location.pathname === "/thirdStep" ? "/fourthStep" : location.pathname === "/fourthStep" ? "/lastStep" : ""} className="bg-marineBlue text-lightGray font-semibold px-3 py-2 rounded-md">
+                Next Step
+            </Link>
             }
         </footer>
     )
