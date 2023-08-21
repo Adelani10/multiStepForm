@@ -24,7 +24,7 @@ export default function First () {
                         <input 
                             type="text" required 
                             name="name" id="name" 
-                            placeholder="e.g Andrew Ellingen" 
+                            placeholder="e.g. Stephen King" 
                             className={`border ${!formData.name && isFormSubmitted ? "border-strawberryRed": ""} text-sm rounded-md h-10 px-3`}
                             value={formData.name} 
                             onChange={
@@ -41,7 +41,7 @@ export default function First () {
                         <input 
                             type="email" required 
                             name="email" id="email" 
-                            placeholder="andrewellingen@gmail.com" 
+                            placeholder="stephenking@lorem.com" 
                             className={`border ${!formData.email && isFormSubmitted ? "border-strawberryRed": ""} text-sm rounded-md h-10 px-3`}
                             value={formData.email}
                             onChange={
